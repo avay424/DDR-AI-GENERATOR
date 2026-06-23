@@ -1,20 +1,4 @@
-// import UploadSection from "../components/UploadSection";
 
-// function Dashboard() {
-//   return (
-//     <div className="min-h-screen bg-gray-100 p-10">
-
-//       <div className="max-w-5xl mx-auto">
-
-//         <UploadSection />
-
-//       </div>
-
-//     </div>
-//   );
-// }
-
-// export default Dashboard;
 
 
 import UploadSection from "../components/UploadSection";

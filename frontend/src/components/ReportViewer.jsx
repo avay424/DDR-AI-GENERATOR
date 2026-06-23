@@ -1,20 +1,4 @@
-// function ReportViewer({ report }) {
-//   if (!report) return null;
 
-//   return (
-//     <div className="mt-8 bg-white shadow-lg rounded-xl p-6">
-//       <h2 className="text-2xl font-bold mb-4">
-//         Generated DDR Report
-//       </h2>
-
-//       <pre className="whitespace-pre-wrap">
-//         {report}
-//       </pre>
-//     </div>
-//   );
-// }
-
-// export default ReportViewer;
 
 
 function ReportViewer({
