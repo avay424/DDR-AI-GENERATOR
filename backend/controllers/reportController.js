@@ -49,13 +49,12 @@ export const generateDDR = async (req, res) => {
     console.log("Compiling final deliverable layout with embedded images...");
     await generatePDF(reportText, pdfPath, allImages);
 
-    res.status(200).json({
-      success: true,
-      report: reportText,
-      images: allImages.map(img => img.path),
-      pdfUrl: `http://localhost:5000/${pdfPath}`
-    });
-
+  res.status(200).json({
+  success: true,
+  report: reportText,
+  images: allImages.map(img => img.path),
+  pdfUrl: `${req.protocol}://${req.get("host")}/${pdfPath}`
+});
   } catch (error) {
     console.error("Pipeline Failure:", error);
     res.status(500).json({
